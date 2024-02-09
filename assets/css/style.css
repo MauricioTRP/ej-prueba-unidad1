@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem ;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    background-color: #af9261;
+    text-align: center;
+}
+
+.info {
+    background-color: black;
+    padding: 3rem;
+}
+
+.info .wrapper {
+    /* background-color: blue; */
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.info .wrapper .text, .ilustracion {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper .text {
+    width: 55%;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.wrapper img {
+    width: 26%;
+    margin-left: 2%;
+}
+
+.legado {
+    background-color: #af9261;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+.legado .tile {
+    display: inline-block;
+    margin-top: 2rem;
+    width: 10rem;
+    vertical-align: middle;
+}
+
+.full-image {
+    background-color: black;
+    position: relative;
+}
+
+.full-image img {
+    width: 100vw;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+}
+
+@keyframes moveSpaceShip {
+    0% {
+        transform: translate(0,0) rotate(0turn);
+    }
+    25% {
+        transform: translate(25vw, -25%) rotate(-0.15turn);       
+    }
+    50% {
+        transform: translate(-18vw, -10vh) rotate(-0.4turn);
+    }
+    100% {
+        transform: translate(1%, 5%) rotate(0.8turn);
+    }
+}
+
+#spaceship{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    animation: moveSpaceShip 6s infinite;
+}
+
